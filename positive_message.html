@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 1. Title -->
+    <title>Positive Message Pop-Up</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #e6f7ff;
+            padding: 40px;
+        }
+
+        .popup {
+            background-color: white;
+            border: 2px solid #4caf50;
+            border-radius: 15px;
+            padding: 25px;
+            max-width: 450px;
+            margin: auto;
+            box-shadow: 0 4px 12px #cccccc;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* 2. Hover Button */
+        button:hover {
+            background-color: #237a36;
+            transform: scale(1.05);
+        }
+
+        #message {
+            color: #237a36;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="popup">
+
+        <!-- 3. Header -->
+        <h1>Stay Positive!</h1>
+
+        <p>
+            Believe in yourself. You are capable of amazing things!
+        </p>
+
+        <!-- 4. Break -->
+        <br>
+
+        <button onclick="showAlert()">
+            Open Positive Alert
+        </button>
+
+        <button onclick="showMessage('You are awesome!')">
+            Show My Message
+        </button>
+
+        <p id="message"></p>
+
+    </div>
+
+    <!-- 5. JavaScript Script -->
+    <script>
+
+        // VARIABLES AND DATA TYPES
+
+        // Integer
+        let age = 16;
+
+        // Float
+        let happiness = 9.5;
+
+        // String
+        let name = "Friend";
+
+        // Variable
+        let positiveScore = 10;
+
+
+        // OPERATORS
+
+        // Addition
+        let addition = 5 + 3;
+
+        // Subtraction
+        let subtraction = 10 - 4;
+
+        // Multiplication
+        let multiplication = 2 * 3;
+
+        // Division
+        let division = 12 / 4;
+
+
+        // STRINGS
+
+        // Escape Character
+        let quote = "Never give up! \"You can do it!\"";
+
+        // Concatenation
+        let greeting = "Hello, " + name + "!";
+
+        // Concatenation With Numbers
+        let encouragement =
+            "Your positive score is " + positiveScore + "!";
+
+        // HTML Coding Inside a String
+        let htmlMessage =
+            "<strong>You are amazing!</strong><br>" +
+            "Keep believing in yourself!";
+
+
+        // FUNCTION 1: ALERT MESSAGE
+
+        function showAlert() {
+            alert("You are amazing! Keep smiling and stay positive!");
+        }
+
+
+        // FUNCTION 2: FUNCTION WITH PARAMETERS
+
+        function showMessage(messageText) {
+            document.getElementById("message").innerHTML =
+                messageText + "<br>" +
+                "Remember: Every day is a new opportunity!";
+        }
+
+
+        // DISPLAY A PERSONALIZED MESSAGE
+
+        function welcomeUser(userName) {
+            alert("Welcome, " + userName + "! Have a wonderful day!");
+        }
+
+    </script>
+
+</body>
+</html>
